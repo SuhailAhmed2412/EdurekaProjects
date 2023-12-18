@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Search</title>
+    <link rel="stylesheet" href="/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#"><img class="eduLogo" src="/images/edurekalogo.webp" alt="logo"></a>
+            </div>
+            <div class="menu">
+                <ul class="menu-items">
+                    <a href="">Login</a>
+                    <a href="" class="createAccount">Create Account</a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="main-heading">
+        <h1>Breakfast Places in Bengaluru</h1>
+    </section>
+    <section>
+        <div class="filters-results">
+            <div class="filters">
+                <b>Filters</b>
+                <div class="dropdown" style="padding-top: 5px;">
+                    <span><b>Select Location</b></span>
+                    <button class="btn btn-secondary dropdown-toggle" style="width: 100%;" type="button"
+                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown button
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Jayanagar</a></li>
+                        <li><a class="dropdown-item" href="#">Vijayanagar</a></li>
+                        <li><a class="dropdown-item" href="#">Frazer Town</a></li>
+                        <li><a class="dropdown-item" href="#">Basavanagudi</a></li>
+                    </ul>
+                </div>
+                <span style="padding-top: 20px;"><b>Cuisine</b></span>
+                <div class="form-check" style="padding-top: 10px;">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        North Indian
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Sount Indian
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Chinese
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Tandoor
+                    </label>
+                </div>
+                <span style="padding-top: 20px;"><b>Cost for two</b></span>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Less than ₹500
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        ₹500 -  ₹1000
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        ₹1000 -  ₹1500
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        ₹1500 -  ₹2000
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        ₹2000+
+                    </label>
+                </div>
+                <span style="padding-top: 20px;"><b>Sort</b></span>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Price low to high
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Price high to low
+                    </label>
+                </div>
+            </div>
+            <div class="results">
+                <div class="resultsarticle card1">
+                    <div class="cardHeader">
+                        <div class="resImage">
+                            <img style="height: 100%; width: 100%; border-radius: 15px;" src="/images/Image1.avif" alt="">
+                        </div>
+                        <div class="resDetails">
+                            <div>
+                                <h2>The Big Chilli Restaurant</h2>
+                            </div>
+                            <div><h4>Jayanagar</h4></div>
+                            <div><span>11th Main, Jayanagar, Bengaluru.560011</span></div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="priceDetails">
+                        <div>CUISINES</div>
+                        <div><b>South Indian</b></div>
+                        <div>COST FOR TWO</div>
+                        <div>₹450</div>
+                    </div>
+                </div>
+                <hr>
+                <div class="resultsarticle card2">
+                    <div class="resultsarticle card1">
+                        <div class="cardHeader">
+                            <div class="resImage">
+                                <img style="height: 100%; width: 100%; border-radius: 15px;" src="/images/Image1.avif" alt="">
+                            </div>
+                            <div class="resDetails">
+                                <div>
+                                    <h2>The Big Chilli Restaurant</h2>
+                                </div>
+                                <div><h4>Jayanagar</h4></div>
+                                <div><span>11th Main, Jayanagar, Bengaluru.560011</span></div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="priceDetails">
+                            <div>CUISINES</div>
+                            <div><b>South Indian</b></div>
+                            <div>COST FOR TWO</div>
+                            <div>₹450</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <a href="">&lt;</a>&nbsp;
+                    <a href="">1</a>&nbsp;
+                    <a href="">2</a>&nbsp;
+                    <a href="">3</a>&nbsp;
+                    <a href="">4</a>&nbsp;
+                    <a href="">&gt;</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+</body>
+
+</html>
